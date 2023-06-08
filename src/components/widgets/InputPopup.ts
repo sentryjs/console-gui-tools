@@ -118,7 +118,7 @@ export class InputPopup extends EventEmitter {
             v = 0
         }
         if (!Number.isNaN(Number(key.name))) {
-            if (v.toString().length < 20) {
+            if (v.toString().length < 50) {
                 let tmp = this.value.toString()
                 tmp += key.name
                 this.value = Number(tmp)
