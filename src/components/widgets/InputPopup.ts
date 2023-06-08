@@ -118,7 +118,7 @@ export class InputPopup extends EventEmitter {
             v = 0
         }
         if (!Number.isNaN(Number(key.name))) {
-            if (v.toString().length < 50) {
+            if (v.toString().length < 36) {
                 let tmp = this.value.toString()
                 tmp += key.name
                 this.value = Number(tmp)
@@ -194,7 +194,7 @@ export class InputPopup extends EventEmitter {
             return
         } // Continue only if the result is 0
         const v = this.value
-        if (v.toString().length < 50) {
+        if (v.toString().length < 36) {
             let tmp = v.toString()
             tmp += key.sequence
             this.value = tmp
