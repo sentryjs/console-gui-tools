@@ -194,7 +194,7 @@ export class InputPopup extends EventEmitter {
             return
         } // Continue only if the result is 0
         const v = this.value
-        if (v.toString().length < 20) {
+        if (v.toString().length < 50) {
             let tmp = v.toString()
             tmp += key.sequence
             this.value = tmp
